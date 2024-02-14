@@ -1,0 +1,89 @@
+---
+layout: dashboard
+title: Share
+description: 
+permalink: /share/
+---
+
+<div class="container mt-4 py-1">
+  <div class="row">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+      <h1 class="fw-bold h2 mb-4">Share ProudCity</h1>
+    </div>
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+        <p class="lead mb-4">Our primary source of new business is through word of mouth and referrals. This helps keep the price of ProudCity lower and lets us focus on building a better product for you. We appreciate any support you can give us by sharing ProudCity to your network.
+          <i
+            class="fa-solid fa-heart"
+            style="color: #e52207;"
+            aria-hidden="true"></i>
+        </p>
+        <h2 class="fw-bold h4">Email</h2>
+        <label for="exampleFormControlTextarea1" class="form-label mb-0">Sample letter:</label>
+<pre class="my-0 py-0">
+  <textarea
+            class="form-control my-0 py-0"
+            id="email"
+            rows="10">
+Just wanted to share with you that we've had a great experience with our government website provider, ProudCity (https://proudcity.com/).                      
+
+They supported getting us trained and launched and manage all the ongoing hosting,  upgrades and customer support.  
+
+You can get an instant ProudCity price quote here: https://proudcity.com/pricing
+
+Let me know if you have any questions or would like an introduction.
+          </textarea>
+</pre>
+<p class="mb-5 pt-0 mt-0">
+  <button id="copyButton" class="btn btn-primary">Copy text</button>
+</p>
+<script>
+            document.getElementById('copyButton').onclick = ()=>{
+              navigator.clipboard.writeText(document.getElementById('email').value);
+            };
+          </script>
+        <h2 class="fw-bold h4">Social media</h2>
+        <p class="mb-3">Share ProudCity on:</p>
+        <div class="list-group mb-4">
+          <a
+            href="#"
+            id="linkedin"
+            rel="nofollow"
+            target="_blank"
+            title="Share on LinkedIn"
+            class="list-group-item list-group-item-action">
+            <i class="fa-brands fa-linkedin-in"></i>
+            LinkedIn</a>
+          <a
+            href="#"
+            id="twitter"
+            rel="nofollow"
+            target="_blank"
+            title="Share on Twitter"
+            class="list-group-item list-group-item-action">
+            <i class="fa-brands fa-x-twitter"></i>
+            Twitter</a>
+          <a
+            href="#"
+            id="facebook"
+            rel="nofollow"
+            target="_blank"
+            title="Share on Facebook"
+            class="list-group-item list-group-item-action">
+            <i class="fa-brands fa-facebook-f"></i>
+            Facebook</a>
+        </div>
+        <img
+          src="x"
+          style="display: none;"
+          onerror="
+    const url = new URLSearchParams(window.location.search).get('domain');
+    document.getElementById('linkedin').href = `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(location.href)}&title=${document.title}&summary=${url}%20website%20metadata%20information.&source=Civic%20Hacking%20Agency`;
+    document.getElementById('twitter').href = `https://twitter.com/intent/tweet?text=${url}%20website%20metadata%20information.&via=civic_hacking&url=${encodeURIComponent(location.href)}`;
+    document.getElementById('facebook').href = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(location.href)}`;
+    this.parentElement.removeChild(this);
+">
+      </div>
+    </div>
+  </div>
+</div>
