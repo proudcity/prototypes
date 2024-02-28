@@ -5,3 +5,11 @@ body {
 .card {
     width: 99.5%;
 }
+
+.bg-primary, .btn-primary {
+    background-color: #0071BC !important;
+}
+
+a, .text-primary {
+    color: #0071BC !important;
+}

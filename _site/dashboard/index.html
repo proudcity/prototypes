@@ -119,6 +119,17 @@
         <li class="nav-item">
           <a
             class="nav-link text-white"
+            href="/development"
+            target="_blank">
+            <i
+              class="fa-solid fa-code"
+              aria-hidden="true"
+              style="color: #ffffff;"></i>
+            Dev</a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link text-white"
             href="https://help.proudcity.com/"
             target="_blank">
             <i
@@ -144,19 +155,17 @@
 <main id="home">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
+      <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 bg-light">
         <ul class="nav flex-column">
   <li class="nav-item">
-    <a
-      class="nav-link"
-      aria-current="page"
-      href="#">Visit site</a>
+    <a class="nav-link text-dark" href="#">
+      <i class="fa-solid fa-house"></i>
+      Visit site</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="/dashboard">Dashboard</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="/development">Development</a>
+    <a class="nav-link text-dark" href="/dashboard">
+      <i class="fa-solid fa-gauge"></i>
+      Dashboard</a>
   </li>
 </ul>
       </div>
@@ -170,7 +179,7 @@
   <div class="row">
     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
       <div class="alert alert-warning" role="alert">
-        <h2 class="h3 fw-bold">Say hello to your new dashboard! 👋</h2>
+        <h2 class="h6 fw-bold m-0 p-0">Welcome to your new dashboard! 👋</h2>
       </div>
     </div>
   </div>
@@ -193,50 +202,58 @@
     <div class="card-group mb-3">
       <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex align-items-stretch">
         <div class="card mb-3">
-          <div class="bg-primary px-3 py-2">
-            <h2 class="h6 card-title fw-bold text-white mb-0">
-              News</h2>
-          </div>
-          <div class="card-body">
-            <p>Updates from ProudCity:</p>
-            <ul class="">
-              <li>
-                <a href="#">Post title</a>
-              </li>
-              <li>
-                <a href="#">Post title</a>
-              </li>
-              <li>
-                <a href="#">Post title</a>
-              </li>
-            </ul>
-            <a
-              href="https://proudcity.com/news"
-              target="_blank"
-              class="btn btn-primary">News</a>
+          <div class="row g-0">
+            <div class="col-md-3 text-center">
+              <i class="fa-solid fa-newspaper text-primary fa-5x p-3"></i>
+            </div>
+            <div class="col-md-9">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">News</h5>
+                <p class="card-text">Updates from ProudCity</p>
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="#">Post title</a>
+                  </li>
+                  <li>
+                    <a href="#">Post title</a>
+                  </li>
+                  <li>
+                    <a href="#">Post title</a>
+                  </li>
+                </ul>
+                <a
+                  href="https://proudcity.com/news"
+                  target="_blank"
+                  class="btn btn-sm btn-primary text-white">News</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex align-items-stretch">
         <div class="card mb-3">
-          <div class="bg-primary px-3 py-2">
-            <h2 class="h6 card-title fw-bold text-white mb-0">
-              Development</h2>
-          </div>
-          <div class="card-body">
-            <p>What we're working on right now:</p>
-            <ul class="list-unstyled">
-              <li>#2456:
-                <a href="#">Issue title</a>
-              </li>
-              <li>#2456:
-                <a href="#">Issue title</a>
-              </li>
-              <li>#2456:
-                <a href="#">Issue title</a>
-              </li>
-            </ul>
-            <a href="/development" class="btn btn-primary">Development</a>
+          <div class="row g-0">
+            <div class="col-md-3 text-center">
+              <i class="fa-solid fa-code text-primary fa-5x p-3"></i>
+            </div>
+            <div class="col-md-9">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Development</h5>
+                <p class="card-text">What we're working on right now:</p>
+                <ul class="list-unstyled">
+                  <li>#2456:
+                    <a href="#">Issue title</a>
+                  </li>
+                  <li>#2456:
+                    <a href="#">Issue title</a>
+                  </li>
+                  <li>#2456:
+                    <a href="#">Issue title</a>
+                  </li>
+                </ul>
+                <a href="/development" class="btn btn-sm btn-primary text-white">Development</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -251,31 +268,39 @@
     <div class="card-group mb-3">
       <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex align-items-stretch">
         <div class="card mb-3">
-          <div class="bg-primary px-3 py-2">
-            <h2 class="h6 card-title fw-bold text-white mb-0">
-              ProudCity</h2>
-          </div>
-          <div class="card-body">
-            <p>Orientation and ProudCity 101 training for new users and folks who need a refresher.</p>
-            <a
-              href="https://proudcity.com/academy"
-              target="_blank"
-              class="btn btn-primary">ProudCity training</a>
+          <div class="row g-0">
+            <div class="col-md-3 text-center">
+              <i class="fa-solid fa-chalkboard text-primary fa-5x p-3"></i>
+            </div>
+            <div class="col-md-9">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">ProudCity</h5>
+                <p class="card-text">Orientation and ProudCity 101 training for new users and folks who need a refresher.</p>
+                <a
+                  href="https://proudcity.com/academy"
+                  target="_blank"
+                  class="btn btn-sm btn-primary text-white">ProudCity training</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex align-items-stretch">
         <div class="card mb-3">
-          <div class="bg-primary px-3 py-2">
-            <h2 class="h6 card-title fw-bold text-white mb-0">
-              Plain language</h2>
-          </div>
-          <div class="card-body">
-            <p>Plain language training and support that helps local governments advance their digital service and delivery skills.</p>
-            <a
-              href="https://proudcity.com/plain-language"
-              target="_blank"
-              class="btn btn-primary">Plain language training</a>
+          <div class="row g-0">
+            <div class="col-md-3 text-center">
+              <i class="fa-solid fa-pen-square text-primary fa-5x p-3"></i>
+            </div>
+            <div class="col-md-9">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Plain language</h5>
+                <p class="card-text">Plain language training and support that helps local governments advance their digital service and delivery skills.</p>
+                <a
+                  href="https://proudcity.com/plain-language"
+                  target="_blank"
+                  class="btn btn-sm btn-primary text-white">Plain language training</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -291,33 +316,39 @@
       <div class="card-group mb-3">
         <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex align-items-stretch">
           <div class="card mb-3">
-            <div class="bg-primary px-3 py-2">
-              <h2 class="h6 card-title fw-bold text-white mb-0">
-                Clean-up</h2>
-            </div>
-            <div class="card-body">
-              <p>Data optimization that keep your website performant.</p>
-              <a
-                href="https://proudcity.com/cleanup"
-                target="_blank"
-                class="btn btn-primary">Clean-up</a>
+            <div class="row g-0">
+              <div class="col-md-3 text-center">
+                <i class="fa-solid fa-broom text-primary fa-5x p-3"></i>
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Clean-up</h5>
+                  <p class="card-text">Data optimization that keep your website performant.</p>
+                  <a
+                    href="https://proudcity.com/cleanup"
+                    target="_blank"
+                    class="btn btn-sm btn-primary text-white">Clean-up</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex align-items-stretch">
           <div class="card mb-3">
-            <div class="bg-primary px-3 py-2">
-              <h2 class="h6 card-title fw-bold text-white mb-0">
-                Review</h2>
-            </div>
-            <div class="card-body">
-              <p>
-                Sign up for recurring website assessments and consultation with actionable outcomes.
-              </p>
-              <a
-                href="https://proudcity.com/review"
-                target="_blank"
-                class="btn btn-primary">Review</a>
+            <div class="row g-0">
+              <div class="col-md-3 text-center">
+                <i class="fa-solid fa-chart-simple text-primary fa-5x p-3"></i>
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Review</h5>
+                  <p class="card-text">Sign up for recurring website assessments and consultation with actionable outcomes.</p>
+                  <a
+                    href="https://proudcity.com/review"
+                    target="_blank"
+                    class="btn btn-sm btn-primary text-white">Review</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -334,35 +365,39 @@
       <div class="card-group mb-3">
         <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex align-items-stretch">
           <div class="card mb-3">
-            <div class="bg-primary px-3 py-2">
-              <h2 class="h6 card-title fw-bold text-white mb-0">
-                Help center</h2>
-            </div>
-            <div class="card-body">
-              <p>
-                Online documentation for (almost everything) ProudCity.
-              </p>
-              <a
-                href="https://help.proudcity.com/"
-                target="_blank"
-                class="btn btn-primary">Help center</a>
+            <div class="row g-0">
+              <div class="col-md-3 text-center">
+                <i class="fa-solid fa-heart text-primary fa-5x p-3"></i>
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Help center</h5>
+                  <p class="card-text">Online documentation for (almost everything) ProudCity.</p>
+                  <a
+                    href="https://help.proudcity.com/"
+                    target="_blank"
+                    class="btn btn-sm btn-primary text-white">Help center</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex align-items-stretch">
           <div class="card mb-3">
-            <div class="bg-primary px-3 py-2">
-              <h2 class="h6 card-title fw-bold text-white mb-0">
-                Support</h2>
-            </div>
-            <div class="card-body">
-              <p>
-                Can't find your answer in the help center?
-              </p>
-              <a
-                href="https://help.proudcity.com/support"
-                target="_blank"
-                class="btn btn-primary">Submit support ticket</a>
+            <div class="row g-0">
+              <div class="col-md-3 text-center">
+                <i class="fa-solid fa-ticket text-primary fa-5x p-3"></i>
+              </div>
+              <div class="col-md-9">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Support</h5>
+                  <p class="card-text">Can't find your answer in the help center?</p>
+                  <a
+                    href="https://help.proudcity.com/support"
+                    target="_blank"
+                    class="btn btn-sm btn-primary text-white">Submit support ticket</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -378,22 +413,25 @@
     <div class="card-group mb-3">
       <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex align-items-stretch">
         <div class="card mb-3">
-          <div class="bg-primary px-3 py-2">
-            <h2 class="h6 card-title fw-bold text-white mb-0">
-              Share</h2>
-          </div>
-          <div class="card-body">
-            <p>
-              Our primary source of new business is through word of mouth and referrals. We appreciate any support you can give us by sharing ProudCity to your network.
-              <i
-                class="fa-solid fa-heart"
-                style="color: #e52207;"
-                aria-hidden="true"></i>
-            </p>
-            <a
-              href="/share"
-              target="_blank"
-              class="btn btn-primary">Share</a>
+          <div class="row g-0">
+            <div class="col-md-3 text-center">
+              <i class="fa-solid fa-share text-primary fa-5x p-3"></i>
+            </div>
+            <div class="col-md-9">
+              <div class="card-body">
+                <h5 class="card-title fw-bold">Share</h5>
+                <p class="card-text">Our primary source of new business is through word of mouth and referrals. We appreciate any support you can give us by sharing ProudCity to your network.
+                  <i
+                    class="fa-solid fa-heart"
+                    style="color: #e52207;"
+                    aria-hidden="true"></i>
+                </p>
+                <a
+                  href="/share"
+                  target="_blank"
+                  class="btn btn-sm btn-primary text-white">Share</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -405,7 +443,7 @@
   </div>
 </main>
 <footer>
-  <div class="container-fluid pt-4 mt-3 border-top">
+  <div class="container-fluid pt-4 border-top">
     <div class="row">
       <div class="col-12 text-center">
         <p class="small">
