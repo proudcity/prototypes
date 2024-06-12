@@ -6,7 +6,7 @@ body {
     width: 99.5%;
 }
 
-.bg-primary, .btn-primary {
+.bg-primary, .btn-primary, .text-bg-primary {
     background-color: #0071BC !important;
 }
 
