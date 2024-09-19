@@ -1,5 +1,5 @@
 ---
 layout: default
 title: ProudCity
-description: 
+description: ProudCity prototypes
 ---
