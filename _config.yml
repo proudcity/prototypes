@@ -2,7 +2,6 @@ title: ProudCity
 description: >- # this means to ignore newlines until "baseurl:"
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
 
